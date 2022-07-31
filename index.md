@@ -1,37 +1,121 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="random">
+        <title>My Website</title>
+        
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(nature3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width:85%;
+    margin: 0 10px;
+    text-transform: uppercase;
+    padding: 43px 0;
+    align-items: center;
+    justify-content:space-between;
+    font-size:large;
+    font-weight: 549;
+    float: left;
+    position: relative;
+    left: 30px;
 
-You can use the [editor on GitHub](https://github.com/Tabshir1/TabGallery.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Tabshir1/TabGallery.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.35s;
+}
+.navbar ul li:hover:after{
+    width: 100%
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: rgb(136, 140, 137);
+}
+.content h1{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 40px;
+}
+.content p{
+    font-size: 20px;
+}
+.button{
+    font-size: 18px;
+    width: 190px;
+    padding: 18px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 40px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background: rgb(38, 114, 55);
+    position: relative;
+    bottom: -5px;
+    right: 15px;
+}
+.button:hover{
+    color: black;
+    background: rgb(125, 231, 128);
+    transition: 0.5s;
+}
+.button a{
+    text-decoration: none;
+    color: black;
+}
+    </style>
+    </head>
+    <body>
+        
+        <div class="banner">
+            <button class="button"><span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">This is a button</a></span></button>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>Pictures Of Stuff</h1>
+                <p>Pictures of food and other stuff idk. Just random stuff I guess. blah blah I want this line to be long</p>
+            </div>
+        </div>
+    </body>
+</html>
