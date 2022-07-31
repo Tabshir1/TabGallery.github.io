@@ -26,7 +26,7 @@
     text-transform: uppercase;
     padding: 43px 0;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     font-size:large;
     font-weight: 549;
     float: left;
